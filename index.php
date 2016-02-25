@@ -107,7 +107,7 @@
   </div>
   <p>If you're running Windows, you can install shortcuts in your Send-To menu to generate files by running the following (<a href="https://gist.github.com/rpavlik/fbdf1347e52b64b833c5">details here</a>):</p>
   <pre>
-powershell -NoProfile -ExecutionPolicy Bypass -Command "iex (((new-object net.webclient).DownloadString('https://gist.githubusercontent.com/rpavlik/fbdf1347e52b64b833c5/raw/bpbootstrap.ps1')) + ' -Project VRPN -URL http://dev.osvr.org/boilerplate/')"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "iex (((new-object net.webclient).DownloadString('https://gist.githubusercontent.com/rpavlik/fbdf1347e52b64b833c5/raw/bpbootstraplib.ps1')) + '; Invoke-BPBootstrap VRPN http://dev.osvr.org/boilerplate/')"
   </pre>
   <p>Get the source code to this app and make it better: <a href="https://github.com/rpavlik/generate-cpp-boilerplate">generate-cpp-boilerplate on GitHub</a></p>
 </body>
